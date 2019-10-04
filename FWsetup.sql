@@ -6,8 +6,10 @@
 
 --drop of the prevoius tabels with the same name
 drop table created_characters;
-drop table droppeditems;
-drop table owneditems;
+drop table characters_history;
+drop table erased_characters;
+drop table dropped_items;
+drop table owned_items;
 drop table characters;
 drop table bosses;
 drop table items;
@@ -142,71 +144,34 @@ insert into items values(5, 'Armatura Completa', 0, 4, 0, 20, 'Armor');
 
 
 --table of dropped items by bosses
-create table droppeditems(
+create table dropped_items(
     boss_id integer
         constraint boss_id_fk references bosses(boss_id) on delete cascade,    
     item_id integer
         constraint item_boss_id_fk references items(item_id) on delete cascade
     );
     
-insert into droppeditems values(1,2);
-insert into droppeditems values(1,1);
-insert into droppeditems values(2,3);
-insert into droppeditems values(2,2);
+insert into dropped_items values(1,2);
+insert into dropped_items values(1,1);
+insert into dropped_items values(2,3);
+insert into dropped_items values(2,2);
     
     
 
 --table of owned items by the characters
-create table owneditems(
+create table owned_items(
     character_id integer
         constraint character_id_fk references characters(character_id) on delete cascade,     
     item_id integer
         constraint item_id_fk references items(item_id) on delete cascade
     );
     
-insert into owneditems values(1,2);
-insert into owneditems values(4,2);
-insert into owneditems values(4,3);
-insert into owneditems values(2,4);
+insert into owned_items values(1,2);
+insert into owned_items values(4,2);
+insert into owned_items values(4,3);
+insert into owned_items values(2,4);
 
 
-
---table for the created characters
-create table created_characters (
-    character_id integer
-        references characters(character_id),
-    first_name varchar2(20),
-    clan_name varchar2(20),    
-    life_points integer,
-    armor_class integer,
-    strength integer,
-    dexterity integer,
-    constitution integer,
-    race_id integer
-    );
-    
---trigger for the created characters
-create or replace trigger created
-after insert on characters
-for each row
-begin
-    insert into created_characters values(
-        :new.character_id, 
-        :new.first_name, 
-        :new.clan_name, 
-        :new.life_points, 
-        :new.armor_class, 
-        :new.strength, 
-        :new.dexterity, 
-        :new.constitution , 
-        :new.race_id
-        );
-end created;
-/
-
-
-insert into characters values(7, 'Boris', 'McKendrik', 102, 18, 18, 15, 16, 3);
-insert into characters values(8, 'Abe', 'MMoonlight', 178, 14, 16, 20, 14, 1);
 
 --table of characters history
 create table characters_history(

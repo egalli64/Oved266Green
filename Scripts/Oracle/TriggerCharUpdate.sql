@@ -1,6 +1,7 @@
 drop table characters_history;
 drop trigger char_update;
 
+--table of characters history
 create table characters_history(
     character_id integer
         references characters(character_id),
@@ -20,10 +21,11 @@ create table characters_history(
     new_constitution integer,
     old_race_id integer,
     new_race_id integer
-        );
+    );
 
+--trigger for the update of characters
 create or replace trigger char_update
-BEFORE update of character_id,first_name,clan_name,life_points,armor_class,strength,dexterity,constitution,race_id on characters
+BEFORE update of character_id, first_name, clan_name, life_points, armor_class, strength, dexterity, constitution, race_id on characters
 for each row
 begin
     insert into characters_history values(
@@ -35,7 +37,8 @@ begin
         :old.strength,:new.strength,
         :old.dexterity,:new.dexterity,
         :old.constitution,:new.constitution,
-        :old.race_id,:new.race_id);
+        :old.race_id,:new.race_id
+        );
 end char_update;
 /
 
@@ -51,3 +54,4 @@ where character_id = 1;
 
 update characters set life_points = life_points + 10 where character_id = 1;
 update characters set armor_class = armor_class + 10 where character_id = 4;
+update characters set armor_class = life_points + 10 where character_id = 7;
