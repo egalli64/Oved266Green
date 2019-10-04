@@ -8,15 +8,23 @@ create table characters_history (
     );
     
 create or replace trigger battle
+    before update of life_points, armor_class on characters
+    for each row
+    begin
+    insert into characters_history values(1, :old.life_points, :new.life_points, :old.armor_class, :new.armor_class);
+end battle;
+/
+/*    
+create or replace trigger battle
 before update of life_points, armor_class on characters
 for each row
 begin
     insert into characters_history values(1, :old.life_points, :new.life_points, :old.armor_class, :new.armor_class);
 end battle;
 /
-
+*/
 update characters
-set life_points = life_points + 100, armor_class = armor_class +100
+set life_points = life_points + 100
 where character_id = 1;
 
 select *
