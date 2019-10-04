@@ -1,6 +1,7 @@
 create table bosses (
     boss_id integer
-        constraint boss_pk primary key,
+        constraint boss_pk primary key
+        constraint boss_id_ck check,
     boss_name varchar2(20)
         constraint boss_first_name_nn not null
         constraint boss_first_name_uq unique,
