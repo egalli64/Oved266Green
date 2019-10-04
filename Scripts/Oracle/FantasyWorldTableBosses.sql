@@ -1,7 +1,6 @@
 create table bosses (
     boss_id integer
-        constraint boss_pk primary key
-        constraint boss_id_ck check,
+        constraint boss_pk primary key,
     boss_name varchar2(20)
         constraint boss_first_name_nn not null
         constraint boss_first_name_uq unique,
@@ -25,9 +24,9 @@ create table bosses (
 select *
 from bosses;
 
-insert into bosses values(30001, 'Balor', 102, 21, 18, 17, 20);
-insert into bosses values(30002, 'Devils pit', 151, 19, 16, 18, 22);
-insert into bosses values(30003, 'Linnorg', 178, 17, 16, 22, 18);
-insert into bosses values(30004, 'Blob', 201, 19, 18, 16, 20);
+insert into bosses values(1, 'Balor', 102, 21, 18, 17, 20);
+insert into bosses values(2, 'Devils pit', 151, 19, 16, 18, 22);
+insert into bosses values(3, 'Linnorg', 178, 17, 16, 22, 18);
+insert into bosses values(4, 'Blob', 201, 19, 18, 16, 20);
 
 drop table bosses;

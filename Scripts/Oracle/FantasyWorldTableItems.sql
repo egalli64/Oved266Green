@@ -25,14 +25,10 @@ create table items (
 select *
 from items;
 
+insert into items values(1, 'Spadone', 3, 0, 2, 10, 'Weapon');
+insert into items values(2, 'Ascia', 2, 0, 0, 15, 'Weapon');
+insert into items values(3, 'Armatura Imbottiba', 0, 2, 5, 5, 'Armor');
+insert into items values(4, 'Pozione Bomba', 3, 0, 0, 0, 'Potion');
+insert into items values(5, 'Armatura Completa', 0, 4, 0, 20, 'Armor');
+
 drop table items;
-
-/*insert into items values(10001, 'Spadone', 3, 0);
-insert into items values(10002, 'Ascia', 2, 0);
-insert into items values(10003, 'Armatura Imbottiba', 0, 2);
-insert into items values(10004, 'Pozione Bomba', 3, 0);
-insert into items values(10005, 'Armatura Completa', 0, 4);
-
-
---update items set bonus_attack = 0 where item_id = 10003;
---update items set bonus_armor_class = 2 where item_id = 10003;

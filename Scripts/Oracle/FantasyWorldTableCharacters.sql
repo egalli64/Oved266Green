@@ -30,11 +30,11 @@ create table characters (
 select *
 from characters;
 
-insert into characters values(10010, 'Bertrand', 'Russell',  52, 16, 18, 16, 20, 20001);
-insert into characters values(10002, 'Srinivasa', 'Ramanujan', 67, 15, 14, 14, 22, 20004);
-insert into characters values(10003, 'Igruk', 'Yok', 42, 17, 18, 14, 16, 20002);
-insert into characters values(10004, 'Douzur', 'Glasukor', 69, 16, 14, 18, 20, 20002);
-insert into characters values(10005, 'Feltix', 'Saner', 71, 17, 14, 18, 19, 20003);
-insert into characters values(10006, 'Gorduin', 'Helecan', 52, 16, 16, 14, 18, 20004);
+insert into characters values(1, 'Bertrand', 'Russell',  52, 16, 18, 16, 20, 1);
+insert into characters values(2, 'Srinivasa', 'Ramanujan', 67, 15, 14, 14, 22, 4);
+insert into characters values(3, 'Igruk', 'Yok', 42, 17, 18, 14, 16, 2);
+insert into characters values(4, 'Douzur', 'Glasukor', 69, 16, 14, 18, 20, 2);
+insert into characters values(5, 'Feltix', 'Saner', 71, 17, 14, 18, 19, 3);
+insert into characters values(6, 'Gorduin', 'Helecan', 52, 16, 16, 14, 18, 4);
 
 drop table characters;
