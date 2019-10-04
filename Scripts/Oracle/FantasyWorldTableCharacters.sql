@@ -30,7 +30,7 @@ create table characters (
 select *
 from characters;
 
-insert into characters values(10001, 'Bertrand', 'Russell',  52, 16, 18, 16, 20, 15001);
+insert into characters values(10010, 'Bertrand', 'Russell',  52, 16, 18, 16, 20, 15001);
 insert into characters values(10002, 'Srinivasa', 'Ramanujan', 67, 15, 14, 14, 22, 15004);
 insert into characters values(10003, 'Igruk', 'Yok', 42, 17, 18, 14, 16, 15002);
 insert into characters values(10004, 'Douzur', 'Glasukor', 69, 16, 14, 18, 20, 15002);
