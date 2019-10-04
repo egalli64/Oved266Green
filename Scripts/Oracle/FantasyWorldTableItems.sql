@@ -13,9 +13,12 @@ create table items (
     bonus_constitution integer
         constraint item_constitution_ck check ( bonus_constitution >= 0)
         constraint item_constitution_nn not null,
-        bonus_life_points integer
+    bonus_life_points integer
         constraint item_life_points_ck check ( bonus_life_points >= 0)
-        constraint item_life_points_nn not null
+        constraint item_life_points_nn not null,
+    item_kind varchar2(20)
+        constraint item_kind_nn not null
+        constraint item_kind_ck check ( item_kind in ( 'Weapon' , 'Armor' , 'Potion'))
         );
 
         
