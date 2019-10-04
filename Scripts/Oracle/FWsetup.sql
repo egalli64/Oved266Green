@@ -1,4 +1,5 @@
 --drop delle rimanenze
+drop table created_characters;
 drop table droppeditems;
 drop table owneditems;
 drop table characters;
@@ -41,7 +42,7 @@ create table characters (
         constraint character_clan_name_nn not null
         constraint character_clan_name_uq unique,
     life_points integer
-        constraint character_life_points_ck check ( life_points > 0)
+        constraint character_life_points_ck check ( life_points >= 0)
         constraint character_life_points_nn not null,
     armor_class integer
         constraint character_armor_class_ck check ( armor_class > 0)
@@ -161,6 +162,31 @@ insert into owneditems values(1,2);
 insert into owneditems values(4,2);
 insert into owneditems values(4,3);
 insert into owneditems values(2,4);
+
+
+
+--tabella per i personaggi creati
+create table created_characters (
+    character_id integer
+        references characters(character_id),
+    first_name varchar2(20),
+    clan_name varchar2(20),    
+    life_points integer,
+    armor_class integer,
+    strength integer,
+    dexterity integer,
+    constitution integer,
+    race_id integer
+    );
+    
+--trigger per i personaggi creati
+create or replace trigger created
+after insert on characters
+for each row
+begin
+    insert into created_characters values(:new.character_id, :new.first_name, :new.clan_name, :new.life_points, :new.armor_class, :new.strength, :new.dexterity, :new.constitution , :new.race_id);
+end created;
+/
 
 
 
