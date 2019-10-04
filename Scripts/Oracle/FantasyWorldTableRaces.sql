@@ -15,9 +15,9 @@ create table races (
 select *
 from races;
 
-insert into races values(15001, 'Human', 0, 4, 2);
-insert into races values(15002, 'Ogre', 4, 2, 1);
-insert into races values(15003, 'Gnome', 0, 4, 0);
-insert into races values(15004, 'Elf', 3, 3, 2);
+insert into races values(20001, 'Human', 0, 4, 2);
+insert into races values(20002, 'Ogre', 4, 2, 1);
+insert into races values(20003, 'Gnome', 0, 4, 0);
+insert into races values(20004, 'Elf', 3, 3, 2);
 
 drop table races;
