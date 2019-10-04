@@ -4,16 +4,20 @@ create table races (
     race_name varchar2(20)
         constraint race_race_name_nn not null
         constraint race_race_name_uq unique,
-    bonus_attack integer
-        constraint race_race_bonus_attack_nn not null,
-    bonus_defence integer
-        constraint race_race_bonus_defence_nn not null
+    bonus_strength integer
+        constraint race_bonus_strength_nn not null,
+    bonus_dexterity integer
+        constraint race_bonus_dexterity_nn not null,
+    bonus_constitution integer
+        constraint race_bonus_constitution_nn not null
         );
         
 select *
 from races;
 
-insert into races values(101, 'Human', 0, 4);
-insert into races values(102, 'Ogre', 4, 2);
-insert into races values(103, 'Gnome', 0, 4);
-insert into races values(104, 'Elf', 3, 3);
+insert into races values(20001, 'Human', 0, 4, 2);
+insert into races values(20002, 'Ogre', 4, 2, 1);
+insert into races values(20003, 'Gnome', 0, 4, 0);
+insert into races values(20004, 'Elf', 3, 3, 2);
+
+drop table races;
