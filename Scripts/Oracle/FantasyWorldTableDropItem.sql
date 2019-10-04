@@ -3,8 +3,6 @@ create table dropitems(
         constraint boss_id_fk references bosses(boss_id) on delete cascade,
         
     item_id integer
-        constraint characters_race_id_fk references items(item_id) on delete cascade
-
-
+        constraint item_id_fk references items(item_id) on delete cascade
 
 );
