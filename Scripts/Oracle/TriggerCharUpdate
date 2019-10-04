@@ -1,7 +1,7 @@
-drop table characterhistory;
-drop trigger charupdate;
+drop table characters_history;
+drop trigger char_update;
 
-create table characterhistory(
+create table characters_history(
     character_id integer
         references characters(character_id),
     old_first_name varchar2(20),
@@ -22,11 +22,11 @@ create table characterhistory(
     new_race_id integer
         );
 
-create or replace trigger charupdate
+create or replace trigger char_update
 BEFORE update of character_id,first_name,clan_name,life_points,armor_class,strength,dexterity,constitution,race_id on characters
 for each row
 begin
-    insert into characterhistory values(
+    insert into characters_history values(
         :old.character_id,
         :old.first_name,:new.first_name,
         :old.clan_name,:new.clan_name,
@@ -36,16 +36,25 @@ begin
         :old.dexterity,:new.dexterity,
         :old.constitution,:new.constitution,
         :old.race_id,:new.race_id);
-end charupdate;
+end char_update;
 /
 
 --test
 select *
-from characterhistory;
+from characters_history;
 select *
 from characters;
 
 update characters
 set life_points = life_points + 100
 where character_id = 1;
+
+update characters set life_points = life_points + 10 where character_id = 1;
+update characters set armor_class = armor_class + 10 where character_id = 4;
+
+select *
+from characters_history;
+
+drop table characterhistory;
+drop trigger charupdate;
 
