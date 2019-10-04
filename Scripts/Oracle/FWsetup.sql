@@ -234,9 +234,3 @@ end char_update;
 
 update characters set life_points = life_points + 10 where character_id = 1;
 update characters set armor_class = armor_class + 10 where character_id = 4;
-
-select *
-from characters_history;
-
-drop table characterhistory;
-drop trigger charupdate;
