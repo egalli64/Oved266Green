@@ -175,8 +175,7 @@ insert into owned_items values(2,4);
 
 --table of characters history
 create table characters_history(
-    character_id integer
-        references characters(character_id),
+    character_id integer,
     old_first_name varchar2(20),
     new_first_name varchar2(20),
     old_clan_name varchar2(20),
