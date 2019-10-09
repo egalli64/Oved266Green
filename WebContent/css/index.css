@@ -28,7 +28,7 @@ body {
 	color: goldenrod;
 }
 
-#sub_title {
+#subTitle {
 	font-family: "Times New Roman", Times;
 	font-weight: bolder;
 	margin-top: -20px;
@@ -51,11 +51,3 @@ body {
 #spare {
 	color: gold;
 }
-/*-size
-:
- 
-cover
-;
-
-
-}*/
