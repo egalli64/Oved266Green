@@ -51,3 +51,11 @@ body {
 #spare {
 	color: gold;
 }
+
+#divider {
+	color: gold;
+}
+
+#playButton {
+	margin: 100px auto;
+}
