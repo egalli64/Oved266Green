@@ -36,10 +36,11 @@ form {
 	background: rgba(22, 22, 22, 0.5); width : auto;
 	border: 1.5px outset whitesmoke;
 	width: auto;
+	
 }
 
 .labelForSign {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Gill Sans W04", GillSans, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 	color: #fff;
 }
 
@@ -49,6 +50,7 @@ button {
 	color: #ffbd0a;
 	padding: 6.5px 130px;
 	text-align: center;
+	font-family: "Gill Sans W04", GillSans, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
@@ -57,7 +59,7 @@ button {
 }
 
 #forget {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Gill Sans W04", GillSans, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 	margin-top: 15px;
 }
 
@@ -74,6 +76,6 @@ button {
 }
 
 #forgetSomething {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Gill Sans W04", GillSans, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 	margin-left: 130px;
 }
