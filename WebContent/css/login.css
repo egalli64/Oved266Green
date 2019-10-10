@@ -9,53 +9,71 @@ html {
 	background-size: cover;
 }
 
-body {
-	/* 	text-align: center; */
-	/* 	font-family: 'Open Sans', sans-serif; */
-	/* 	color: #fff; */
-	/* 	margin: 40px left; */
-	background: rgba(22, 22, 22, 0.5);
-	width: 100%;
-	max-width: 400px;
-	border-radius: 5px;
-	padding-bottom: 0px;
-}
 
 form {
+	margin: 75px; 
+	background: rgba(22, 22, 22, 0.5);
 	padding-top: 30px;
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-bottom: 20px;
-	width: 0px;
+	padding-bottom: 95px;
+	width: 350px;
+	max-width: 350px;
 	height: 300px;
-	
-/* 		font-family: 'Open Sans', sans-serif; */
-/* 		color: #fff; */
-		
-	
-	width: auto;
 	border: 1.5px solid black;
+	border: 1.5px outset #d76714;
+	border-radius: 5px;
+	max-width: 400px;
 }
 
-#name{
+#name {
+	background: rgba(22, 22, 22, 0.5); width : auto;
+	border: 1.5px outset whitesmoke;
 	width: auto;
-	border: 1.5px solid black;
 }
 
-#password{
+#password {
+	background: rgba(22, 22, 22, 0.5); width : auto;
+	border: 1.5px outset whitesmoke;
 	width: auto;
-	border: 1.5px solid black;
 }
 
-botton{
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+.labelForSign {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+}
+
+button {
+	background-color: #18061e;
+	border: 2px outset #d76714;
+	color: #ffbd0a;
+	padding: 6.5px 130px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+#forget {
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 15px;
+}
+
+#forget a:link, .link a:visited {
+	color: #ffbd0a;
+	text-decoration: #d76714;
+	font-weight: lighter;
+	font-size: 12.5px;
+}
+
+#forget a:hover, .link a:active {
+	text-decoration: #d76714;
+	color: #ffbd0a;
+}
+
+#forgetSomething {
+	font-family: 'Open Sans', sans-serif;
+	margin-left: 130px;
 }

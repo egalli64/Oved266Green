@@ -6,34 +6,45 @@
 <link rel="stylesheet" type="text/css" href="./css/login.css" />
 </head>
 <body>
-
+<div>
+	
 	<form action="/comment" method="post">
 		
 		
-		    <h2>SIGN IN</h2>
+		    <h2 class="labelForSign">SIGN IN</h2>
 		     <hr> <br>
 		
 		
-			<label for="name" > User_Name </label> 
+			<label for="name" class="labelForSign"> <span>User Name</span> </label> 
 			
 			<br>
 			<input type="text" id="name" name="sender" maxlength="25" size="50">
 			<br><br>
 				
-			<label for="password">Password</label> 
+			<label for="password" class="labelForSign">Password</label> 
 			<br>
 			<input type="password" id="password"name="sender" maxlength="25" size="50">
 			<br><br>
-			<input type="checkbox" name="rememberMe" value="remember"><span>Remember Me</span>
+			<input type="checkbox" name="rememberMe" value="remember"><span class="labelForSign">Remember me</span>
 			
 			<hr> <br>
 			
-			<button type="submit">SING IN</button>
+			<button type="submit" id="button">SIGN IN</button>
+			
+			<div id=forget>
+			
+			<a href="forgetUsername.html"> <span class="forgetSomething">Forgot Username?</span></a>
+			<a href="forgetPassword.html"> <span id="forgetSomething">Forgot Password?</span></a>
+			<br>
+			<a href="createAccount.html"> <span class="forgetSomething">Create account?</span></a>
+			
+			</div>
 
 	</form>
-
-<!-- pass dimenticata account dimenticato crea account -->
-
+	
+</div>
+<br><br><br><br><br><br><br><br>
+<hr>
 
 </body>
 </html>
