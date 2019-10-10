@@ -16,6 +16,7 @@ html {
 	max-width: 960px;
 	border-radius: 5px;
 	padding: 32px;
+	border: 1.5px outset #d76714;
 }
 
 .names{
@@ -45,6 +46,7 @@ html {
 	width: 100%;
 	max-width: 960px;
 	border-radius: 5px;
+	border: 1.5px outset #d76714;
 }
 
 #colImg{
@@ -53,22 +55,22 @@ html {
 }
 
 #link{
-	padding: 8px;
+	padding: 1px;
 	text-align: center;
 	color: #fff;
 	background: rgba(22, 22, 22, 0.75);
 	border-radius: 5px;
-	max-width: 20%;
+	width: 170px;
+	margin-top: -5px;
+	border: 1.5px outset #d76714;
 }
 
 #link a:link, #link a:visited {
 	color: gold;
-	/*text-decoration: underline orange;*/
 	font-weight: bolder;
 	font-size: 1.3em;
 }
 
 #link a:hover, #link a:active {
-	/*text-decoration: underline overline;*/
 	color: gold;
 }
