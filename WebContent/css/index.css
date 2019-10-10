@@ -7,6 +7,118 @@ html {
 	font-family: "Gill Sans W04", GillSans, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.viewport {
+	text-align: center;
+	color: #fff;
+	margin: 40px auto;
+	background: rgba(22, 22, 22, 0.5);
+	width: 100%;
+	max-width: 960px;
+	border-radius: 5px;
+	padding: 32px;
+}
+
+.
+
+.names{
+	font-weight: bolder;
+	text-decoration: underline;
+	color: goldenrod;
+}
+
+#row{
+	text-align: center;
+	padding-bottom: 16px;
+}
+
+#doubleLink{
+	padding: 8px;
+	text-align: center;
+	color: #fff;
+	background: rgba(22, 22, 22, 0);
+	border-radius: 5px;
+	width: 410px;
+}
+#link{
+	padding: 8px;
+	text-align: center;
+	color: #fff;
+	background: rgba(22, 22, 22, 0.75);
+	border-radius: 5px;
+	width: 180px;
+}
+
+#links{
+	padding: 8px;
+	text-align: center;
+	color: #fff;
+	background: rgba(22, 22, 22, 0.75);
+	border-radius: 5px;
+	width: 180px;
+	margin-right: 16px;
+	margin-left: 16px;
+}
+
+#col{
+	padding: 16px;
+	text-align: justify;
+	color: #fff;
+	margin: 40px auto;
+	background: rgba(22, 22, 22, 0.75);
+	width: 100%;
+	max-width: 960px;
+	border-radius: 5px;
+}
+
+#title {
+	font-weight: bolder;
+	text-decoration: underline;
+	font-size: 3em;
+	color: goldenrod;
+	padding-bottom: 30px;
+}
+
+#subTitle {
+	font-weight: bolder;
+	margin-top: -20px;
+	font-stretch: 1em;
+	color: goldenrod;
+}
+
+#link a:link, #link a:visited, #links a:link, #links a:visited {
+	color: gold;
+	/*text-decoration: underline orange;*/
+	font-weight: bolder;
+	font-size: 1.3em;
+}
+
+#link a:hover, #link a:active, #links a:link, #links a:visited {
+	/*text-decoration: underline overline;*/
+	color: gold;
+}
+
+#divider {
+	color: gold;
+}
+
+#playButton {
+	margin: 100px auto;
+}
+	
+#spare {
+	color: gold;
+}
+
+
+/*html {
+	background: url("/Oved266Green/img/background.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: "Gill Sans W04", GillSans, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 body {
 	text-align: center;
 	color: #fff;
@@ -54,4 +166,4 @@ body {
 
 #playButton {
 	margin: 100px auto;
-}
+}*/
