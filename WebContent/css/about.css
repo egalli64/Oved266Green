@@ -1,0 +1,76 @@
+html {
+	background: url("/Oved266Green/img/background.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: "Gill Sans W04", GillSans, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.viewport {
+	text-align: center;
+	color: #fff;
+	margin: 40px auto;
+	background: rgba(22, 22, 22, 0.5);
+	width: 100%;
+	max-width: 960px;
+	border-radius: 5px;
+	padding: 32px;
+	border: 1.5px outset #d76714;
+}
+
+.names{
+	font-weight: bolder;
+	text-decoration: underline;
+	color: goldenrod;
+}
+
+#title {
+	font-weight: bolder;
+	text-decoration: underline;
+	font-size: 3em;
+	color: goldenrod;
+	padding-bottom: 30px;
+}
+
+#row{
+	padding-bottom: 16px;
+}
+
+#col{
+	padding: 16px;
+	text-align: justify;
+	color: #fff;
+	margin: 40px auto;
+	background: rgba(22, 22, 22, 0.75);
+	width: 100%;
+	max-width: 960px;
+	border-radius: 5px;
+	border: 1.5px outset #d76714;
+}
+
+#colImg{
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+#link{
+	padding: 1px;
+	text-align: center;
+	color: #fff;
+	background: rgba(22, 22, 22, 0.75);
+	border-radius: 5px;
+	width: 170px;
+	margin-top: -5px;
+	border: 1.5px outset #d76714;
+}
+
+#link a:link, #link a:visited {
+	color: gold;
+	font-weight: bolder;
+	font-size: 1.3em;
+}
+
+#link a:hover, #link a:active {
+	color: gold;
+}
