@@ -65,12 +65,12 @@ html {
 
 #link a:link, #link a:visited {
 	color: gold;
-	text-decoration: underline orange;
+	/*text-decoration: underline orange;*/
 	font-weight: bolder;
 	font-size: 1.3em;
 }
 
 #link a:hover, #link a:active {
-	text-decoration: underline overline;
+	/*text-decoration: underline overline;*/
 	color: gold;
 }
