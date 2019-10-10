@@ -4,29 +4,36 @@
 <meta charset="utf-8">
 <title>login</title>
 <link rel="stylesheet" type="text/css" href="./css/login.css" />
-
 </head>
 <body>
 
-	<title>Login</title>
 	<form action="/comment" method="post">
-		<div style="position: absolute; left: 10000000000; top: 10000;">
 		
-			<label for="name" id="labelForName">Name:</label> 
+		
+		    <h2>SIGN IN</h2>
+		     <hr> <br>
+		
+		
+			<label for="name" > User_Name </label> 
 			
-	</div>
 			<br>
-			<input type="text" id="name" name="sender" >
-			<br>
+			<input type="text" id="name" name="sender" maxlength="25" size="50">
+			<br><br>
 				
-			<label for="password">Password:</label> 
+			<label for="password">Password</label> 
 			<br>
-			<input type="password" id="password"
-				name="sender">
-			<br>
-			<button type="submit">Send</button>
+			<input type="password" id="password"name="sender" maxlength="25" size="50">
+			<br><br>
+			<input type="checkbox" name="rememberMe" value="remember"><span>Remember Me</span>
+			
+			<hr> <br>
+			
+			<button type="submit">SING IN</button>
 
 	</form>
+
+<!-- pass dimenticata account dimenticato crea account -->
+
 
 </body>
 </html>
