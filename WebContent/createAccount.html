@@ -4,38 +4,64 @@
 <meta charset="Utf-8">
 <title>Create Account</title>
 <link rel="stylesheet" type="text/css" href="./css/createAccount.css" />
-<title>About</title>
  <link rel="stylesheet" type="text/css" href="./css/about.css" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <!-- Required meta tags always come first -->
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap Template</title>
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <!-- Bootstrap core CSS -->
-  <link href="../../css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-
-<div class="container-fluid" >
-		<h2 id="title">About us</h2>
-	</div>
-
-	<div class="container-fluid" id="row" >
-		<div class="row">
-			<div id="colImg">
-				<img src="./img/marco.png">
-			</div>
-			<div class="col" id ="col">
-				<h4 class="names">Marco Blanco</h4>
-				<p>
-				Marco is the mind behind the development of the web pages trying to reach the perfection. <br>
-				</p>
-			</div>
-		</div>
-	</div>
+<body class="viewport">
+<form action="/comment" method="post">
+ <h2 class="labelForSign">CREATE ACCOUNT</h2>
+		     <hr> <br>
+		
+		
+			<label for="name" class="labelForSign"> <span>Name</span> </label> 
+			
+			<br>
+			<input type="text" id="name" name="sender" maxlength="25" size="50">
+			<br><br>
+			
+			<label for="surname" class="labelForSign"> <span>Surname</span> </label> 
+			
+			<br>
+			<input type="text" id="surname" name="sender" maxlength="25" size="50">
+			<br><br>
+			
+			<label for="date" class="labelForSign"> <span>Date</span> </label> 
+			
+			<br>
+			<input type="date" id="date" name="sender" maxlength="25" size="50">
+			<br><br>
+			
+			<label for="userName" class="labelForSign"> <span>User Name</span> </label> 
+			
+			<br>
+			<input type="text" id="userName" name="sender" maxlength="25" size="50">
+			<br><br>
+				
+			<label for="password" class="labelForSign">Password</label> 
+			<br>
+			<input type="password" id="password"name="sender" maxlength="25" size="50">
+			<br><br>
+			
+		    <label for="rePassword" class="labelForSign">Re-Confirm Password</label> 
+			<br>
+			<input type="password" id="rePassword" name="sender" maxlength="25" size="50">
+			<br><br>
+			
+			<input type="checkbox" name="license" value="acceptlicense"><span class="labelForSign">I agree to the <a href="termsOfService.html"><span>terms of service</span></a></span>
+			
+			<hr> <br>
+			
+			<button type="submit" id="button">CREATE ACCOUNT</button>
+</form>	
+<!-- 			<div id=forget> -->
+			
+<!-- 			<a href="forgetUsername.html"> <span class="forgetSomething">Forgot Username?</span></a> -->
+<!-- 			<a href="forgetPassword.html"> <span id="forgetSomething">Forgot Password?</span></a> -->
+<!-- 			<br> -->
+<!-- 			<a href="createAccount.html"> <span class="forgetSomething">Create account?</span></a> </div> -->
 
 </body>
 </html>

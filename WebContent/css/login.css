@@ -20,7 +20,6 @@ form {
 	width: 350px;
 	max-width: 350px;
 	height: 300px;
-	border: 1.5px solid black;
 	border: 1.5px outset #d76714;
 	border-radius: 5px;
 	max-width: 400px;
@@ -30,13 +29,21 @@ form {
 	background: rgba(22, 22, 22, 0.5);
 	border: 1.5px outset whitesmoke;
 	width: 315px;
+	color: whitesmoke;
+}
+
+#surname{
+	background: rgba(22, 22, 22, 0.5);
+	border: 1.5px outset whitesmoke;
+	width: 315px;
+	color: whitesmoke;
 }
 
 #password {
 	background: rgba(22, 22, 22, 0.5);
 	border: 1.5px outset whitesmoke;
 	width: 315px;
-	
+	color: whitesmoke;
 }
 
 .labelForSign {
