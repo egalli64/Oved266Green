@@ -60,7 +60,7 @@ button {
 	margin-top: 15px;
 }
 
-#forget a:link, .link a:visited {
+#forget a:link, #forget a:visited {
 	color: #ffbd0a;
 	text-decoration: #d76714;
 	font-weight: lighter;
