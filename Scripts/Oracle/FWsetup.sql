@@ -13,6 +13,7 @@ drop table owned_items;
 drop table characters;
 drop table bosses;
 drop table items;
+drop table users;
 drop table races;
 
 
@@ -34,8 +35,26 @@ create table races (
 
 insert into races values(1, 'Human', 0, 4, 2);
 insert into races values(2, 'Ogre', 4, 2, 1);
-insert into races values(3, 'Gnome', 0, 4, 0);
+insert into races values(3, 'Dwarf', 0, 4, 0);
 insert into races values(4, 'Elf', 3, 3, 2);
+insert into races values(5, 'Werewolf', 0, 4, 0);
+insert into races values(6, 'Halfdragon', 3, 3, 2);
+
+
+
+--table of users
+create table users (
+    user_id integer
+        constraint user_pk primary key,
+    user_name varchar2(20)
+        constraint user_user_name_nn not null
+        constraint user_user_name_uq unique,
+    password_user varchar2(20)
+        constraint user_password_user_nn not null
+        );
+        
+insert into users values(1, 'pippo', 'pippo');
+insert into users values(2, 'paperino', 'paperino');
 
 
 
@@ -50,7 +69,7 @@ create table characters (
         constraint character_clan_name_nn not null
         constraint character_clan_name_uq unique,
     life_points integer
-        constraint character_life_points_ck check ( life_points >= 0)
+        constraint character_life_points_ck check ( life_points > 0)
         constraint character_life_points_nn not null,
     armor_class integer
         constraint character_armor_class_ck check ( armor_class > 0)
@@ -65,17 +84,18 @@ create table characters (
         constraint character_constitution_ck check ( constitution > 0)
         constraint character_constitution_nn not null,
     race_id integer
-        constraint characters_race_id_fk references races(race_id) on delete cascade
+        constraint characters_race_id_fk references races(race_id) on delete cascade,
+    user_id integer
+        constraint users_user_id_fk references users(user_id) on delete cascade
         );
    
 
-insert into characters values(1, 'Bertrand', 'Russell',  52, 16, 18, 16, 20, 1);
-insert into characters values(2, 'Srinivasa', 'Ramanujan', 67, 15, 14, 14, 22, 4);
-insert into characters values(3, 'Igruk', 'Yok', 42, 17, 18, 14, 16, 2);
-insert into characters values(4, 'Douzur', 'Glasukor', 69, 16, 14, 18, 20, 2);
-insert into characters values(5, 'Feltix', 'Saner', 71, 17, 14, 18, 19, 3);
-insert into characters values(6, 'Gorduin', 'Helecan', 52, 16, 16, 14, 18, 4);
-
+insert into characters values(1, 'Bertrand', 'Russell',  52, 16, 18, 16, 20, 1, 1);
+insert into characters values(2, 'Srinivasa', 'Ramanujan', 67, 15, 14, 14, 22, 4, 2);
+insert into characters values(3, 'Igruk', 'Yok', 42, 17, 18, 14, 16, 2, 1);
+insert into characters values(4, 'Douzur', 'Glasukor', 69, 16, 14, 18, 20, 2, 1);
+insert into characters values(5, 'Feltix', 'Saner', 71, 17, 14, 18, 19, 3, 2);
+insert into characters values(6, 'Gorduin', 'Helecan', 52, 16, 16, 14, 18, 4, 2);
 
 
 --table of bosses

@@ -23,18 +23,20 @@ create table characters (
         constraint character_constitution_ck check ( constitution > 0)
         constraint character_constitution_nn not null,
     race_id integer
-        constraint characters_race_id_fk references races(race_id) on delete cascade
+        constraint characters_race_id_fk references races(race_id) on delete cascade,
+    user_id integer
+        constraint users_user_id_fk references users(user_id) on delete cascade
         );
    
         
 select *
 from characters;
 
-insert into characters values(1, 'Bertrand', 'Russell',  52, 16, 18, 16, 20, 1);
-insert into characters values(2, 'Srinivasa', 'Ramanujan', 67, 15, 14, 14, 22, 4);
-insert into characters values(3, 'Igruk', 'Yok', 42, 17, 18, 14, 16, 2);
-insert into characters values(4, 'Douzur', 'Glasukor', 69, 16, 14, 18, 20, 2);
-insert into characters values(5, 'Feltix', 'Saner', 71, 17, 14, 18, 19, 3);
-insert into characters values(6, 'Gorduin', 'Helecan', 52, 16, 16, 14, 18, 4);
+insert into characters values(1, 'Bertrand', 'Russell',  52, 16, 18, 16, 20, 1, 1);
+insert into characters values(2, 'Srinivasa', 'Ramanujan', 67, 15, 14, 14, 22, 4, 2);
+insert into characters values(3, 'Igruk', 'Yok', 42, 17, 18, 14, 16, 2, 1);
+insert into characters values(4, 'Douzur', 'Glasukor', 69, 16, 14, 18, 20, 2, 1);
+insert into characters values(5, 'Feltix', 'Saner', 71, 17, 14, 18, 19, 3, 2);
+insert into characters values(6, 'Gorduin', 'Helecan', 52, 16, 16, 14, 18, 4, 2);
 
 drop table characters;
