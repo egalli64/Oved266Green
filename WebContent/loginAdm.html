@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link rel="stylesheet" type="text/css" href="./css/loginadm.css" />
+<link rel="stylesheet" type="text/css" href="./css/loginAdm.css" />
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <meta name="viewport"
@@ -23,24 +23,28 @@
 
 				<div class=logposition>
 					<form action="/=comment" method="post">
-						<br>
-						<br>
+						<br> <br>
 
 						<h2 class="labelForSign">
-							<span id=ln>LOG IN ADMIN</span>
+							<div id=ln>LOGIN</div>
 						</h2>
+						<h4 class="labelForSign"><span id=ad>ADMIN</span></h4>
+
 						<hr>
 						<br> <label for="name" class="labelForSign"><span
-							id="name1">UserName</span> </label> <br> <input type="text"
+							id="name1">AdminName</span> </label> <br> <input type="text"
 							id="name" name="sender" maxlength="25"> <br> <br>
 						<label for="password" class="labelForSign"><span
 							id="password1">Password</span></label> <br> <input type="password"
-							id="password" name="sender" maxlength="25">
-
+							id="password" name="sender" maxlength="25"> <br> <br>
+						<br>
 
 						<button type="submit" id="button">LOG IN</button>
-
-
+						<br> <br>
+						<div id=forget>
+							<a href="index.html"> <span class="forgetSomething">home</span></a>
+						</div>
+						<br> <br>
 					</form>
 				</div>
 			</div>

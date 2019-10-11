@@ -17,25 +17,24 @@ html {
 		margin: 40px auto;
 		background: rgba(22, 22, 22, 0.5);
 		width: 100%;
-		max-width: 960px;
+		max-width: 600px;
 		border-radius: 5px;
 		padding: 32px;
 		border: 1.5px outset #d76714;
-		border-radius: 5px;
 	
 }
 
 input {
+	
 	background: rgba(22, 22, 22, 0.5);
 	border: 1.5px outset whitesmoke;
-	width: 315px;
+	width: auto;
 	color: whitesmoke;
 }
 
-label {
-	allignament-left 10px;
 
-}
+
+/* } */
 /* .labelForSign { */
 /* 	color: #fff; */
 /* } */
@@ -43,11 +42,11 @@ button {
 	background-color: #18061e;
 	border: 2px outset #d76714;
 	color: #ffbd0a;
-	padding: 6.5px 130px;
-	text-align: center;
+	padding: 6.5px 75px;
+	/* 	text-align: center; */
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
-	margin: 4px 2px;
+	margin: 2px 2px;
 	cursor: pointer;
 }

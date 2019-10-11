@@ -12,42 +12,46 @@
 <body class="viewport">
 
 
-	<div class="container-fluid">
-		<div class="col">
-			<form action="/comment" method="post">
-				<h2 class="labelForSign">CREATE ACCOUNT</h2>
-				<hr>
-				<br> <label for="name" class="labelForSign"> <span>Name</span>
-				</label> <br> <input type="text" id="name" name="sender" maxlength="25"
-					size="50"> <br>
-				<br> <label for="surname" class="labelForSign"> <span>Surname</span>
-				</label> <br> <input type="text" id="surname" name="sender"
-					maxlength="25" size="50"> <br>
-				<br> <label for="date" class="labelForSign"> <span>When
-						were your born?</span>
-				</label> <br> <input type="date" id="date" name="sender" maxlength="25"
-					size="50"> <br>
-				<br> <label for="userName" class="labelForSign"> <span>User
-						Name</span>
-				</label> <br> <input type="text" id="userName" name="sender"
-					maxlength="25" size="50"> <br>
-				<br> <label for="password" class="labelForSign">Password</label>
-				<br> <input type="password" id="password" name="sender"
-					maxlength="25" size="50"> <br>
-				<br> <label for="rePassword" class="labelForSign">Re-Confirm
-					Password</label> <br> <input type="password" id="rePassword"
-					name="sender" maxlength="25" size="50"> <br>
-				<br> <input type="checkbox" name="license"
-					value="acceptlicense" id="box"><span id="check">I
-					agree to the <a href="termsOfService.html"><span>terms
-							of service</span></a>
-				</span>
+		<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<form action="/comment" method="post">
+					<h2 class="labelForSign">CREATE ACCOUNT</h2>
+					<hr>
+					<br> <label for="name" class="labelForSign"> <span>Name</span>
+					</label> <br> <input type="text" id="name" name="sender"
+						maxlength="25"> <br> <br> <label
+						for="surname" class="labelForSign"> <span>Surname</span>
+					</label> <br> <input type="text" id="surname" name="sender"
+						maxlength="25"> <br> <br> <label
+						for="date" class="labelForSign"> <span>When were
+							your born?</span>
+					</label> <br> <input type="date" id="date" name="sender"
+						maxlength="25"> <br> <br> <label
+						for="userName" class="labelForSign"> <span>User
+							Name</span>
+					</label> <br> <input type="text" id="userName" name="sender"
+						maxlength="25"> <br> <br> <label
+						for="email" class="labelForSign"> <span>Email</span>
+					</label> <br> <input type="email" id="email" name="emailaddress"
+						maxlength="25"> <br> <br> <label
+						for="password" class="labelForSign">Password</label> <br> <input
+						type="password" id="password" name="sender" maxlength="25"
+						> <br> <br> <label for="rePassword"
+						class="labelForSign">Re-Confirm Password</label> <br> <input
+						type="password" id="rePassword" name="sender" maxlength="25"
+						> <br> <br> <input type="checkbox"
+						name="license" value="acceptlicense" id="box"><span
+						id="check"> I agree to the <a href="termsOfService.html"><span>terms
+								of service</span></a>
+					</span>
 
-				<hr>
-				<br>
+					<hr>
+					<br>
 
-				<button type="submit" id="button">CREATE ACCOUNT</button>
-			</form>
+					<button type="submit" id="button">CREATE ACCOUNT</button>
+				</form>
+			</div>
 		</div>
 	</div>
 

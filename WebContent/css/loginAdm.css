@@ -1,16 +1,29 @@
 @charset "ISO-8859-1";
 
+/* html { */
+/* 	background: url("/Oved266Green/img/background.jpg") no-repeat center center fixed; */
+/* 	font-family: "Gill Sans W04", GillSans, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+/* 	-webkit-background-size: cover; */
+/* 	-moz-background-size: cover; */
+/* 	-o-background-size: cover; */
+/* 	background-size: cover;	 */
+/* } */
 body {
-	background: url("/Oved266Green/img/background.jpg") no-repeat center
+	background: url("/Oved266Green/img/backgroundbw.jpg") no-repeat center
 		center fixed;
-		
 	font-family: "Gill Sans W04", GillSans, "Gill Sans", "Gill Sans MT",
 		Calibri, "Trebuchet MS", sans-serif;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	
+	
 }
+/* background { */
+/*   -webkit-filter: grayscale(100%); Safari 6.0 - 9.0 */
+/*   filter: grayscale(100%); */
+/* } */
 
 form {
 	/* 	margin: 75px;  */
@@ -41,7 +54,7 @@ form {
 #name1 {
 	color: whitesmoke;
 	position: relative;
-	right: 65px;
+	right: 58px;
 }
 #password1 {
 	color: whitesmoke;
@@ -51,7 +64,13 @@ form {
 #ln {
 	color: whitesmoke;
 	position: relative;
-	right: 53px;
+	right: 54px;
+
+}
+#ad {
+	color: whitesmoke;
+	position: relative;
+	right: 60px;
 
 }
 

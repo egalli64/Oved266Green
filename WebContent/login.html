@@ -2,49 +2,56 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>login</title>
 <link rel="stylesheet" type="text/css" href="./css/login.css" />
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>New LogIn</title>
 </head>
 <body>
-<div>
-	
-	<form action="/comment" method="post">
-		
-		
-		    <h2 class="labelForSign">LOG IN</h2>
-		     <hr> <br>
-		
-		
-			<label for="name" class="labelForSign"> <span id="name1">User Name</span> </label> 
+<br><br><br><br><br><br><br>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-lg-6">
 			
-			<br>
-			<input type="text" id="name" name="sender" maxlength="25" size="50">
-			<br><br>
-				
-			<label for="password" class="labelForSign">Password</label> 
-			<br>
-			<input type="password" id="password"name="sender" maxlength="25" size="50">
-			<br><br>
-			<input type="checkbox" name="rememberMe" value="remember"><span class="labelForSign">Remember me</span>
-			
-			<hr> <br>
-			
-			<button type="submit" id="button">LOG IN</button>
-			
-			<div id=forget>
-			
-			<a href="forgetUsername.html"> <span class="forgetSomething">Forgot Username?</span></a>
-			<a href="forgetPassword.html"> <span id="forgetSomething">Forgot Password?</span></a>
-			<br>
-			<a href="createAccount.html"> <span class="forgetSomething">Create account?</span></a>
-			
-			</div>
+				<div class=logposition>
+					<form action="/=comment" method="post">
+							<br><br>
 
-	</form>
-	
-</div>
-<br><br><br><br><br><br><br><br>
-<hr>
+						<h2 class="labelForSign"><span id = ln>LOGIN</span></h2>
+						<hr>
+						<br> <label for="name" class="labelForSign"><span id="name1">UserName</span>
+						</label> <br> <input type="text" id="name" name="sender"
+							maxlength="25"> <br> <br> <label for="password"
+							class="labelForSign"><span id="password1">Password</span></label> <br> <input
+							type="password" id="password" name="sender" maxlength="25">
+						<br> <br> <input type="checkbox" name="rememberMe"
+							value="remember"> <span class="labelForSign">Remember
+							me</span>
+
+						<hr>
+						<br>
+
+						<button type="submit" id="button">LOG IN</button>
+
+						<div id=forget>
+
+							<a href="forgetUsername.html"> <span class="forgetSomething">Forgot
+									Username?</span></a> |<a href="forgetPassword.html"> <span
+								id="forgetSomething">Forgot Password?</span></a> <br> <a
+								href="createAccount.html"> <span class="forgetSomething">Create
+									account?</span></a>
+
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 
 </body>
 </html>
